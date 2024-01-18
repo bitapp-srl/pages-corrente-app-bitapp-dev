@@ -1,0 +1,597 @@
+<!doctype html><html lang=it-it>
+<head>
+<meta name=generator content="Hugo 0.92.2">
+<meta charset=utf-8>
+<meta name=description content="CORRENTE è il car sharing che prenoti dal telefono. Fino a 335 auto elettriche a tua disposizione, per viaggiare dentro e fuori Bologna senza pagare il parcheggio.">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title>Corrente - Il Car Sharing che ti carica</title>
+<script type=text/plain data-cookiecategory=analytics>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://analytics.tper.it/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '3']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+<script src=https://corrente.bo.it/js/jquery-min.js></script>
+<script src=//cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js></script>
+<script src=//cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/it.js></script>
+<link rel=stylesheet type=text/css href=https://corrente.bo.it/css/bootstrap.min.css>
+<link rel=stylesheet type=text/css href=https://corrente.bo.it/fonts/line-icons.css>
+<link rel=stylesheet href=https://use.fontawesome.com/releases/v5.3.1/css/all.css integrity=sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU crossorigin=anonymous>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel=stylesheet>
+<link rel=stylesheet type=text/css href=https://corrente.bo.it/css/slicknav.css>
+<link rel=stylesheet type=text/css href=https://corrente.bo.it/css/nivo-lightbox.css>
+<link rel=stylesheet type=text/css href=https://corrente.bo.it/css/animate.css>
+<link rel=stylesheet type=text/css href=https://corrente.bo.it/scss/main.css>
+<link rel=stylesheet type=text/css href=https://corrente.bo.it/css/corrente.css>
+<link rel=stylesheet type=text/css href=https://corrente.bo.it/scss/responsive.css>
+</head>
+<body class=home>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NR4J75" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript>
+<header id=header-wrap>
+<nav class="navbar navbar-expand-lg fixed-top top-nav-collapse">
+<div class=container>
+<div class=navbar-header>
+<button class=navbar-toggler type=button data-toggle=collapse data-target=#main-navbar aria-controls=main-navbar aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+<span class=icon-menu></span>
+<span class=icon-menu></span>
+<span class=icon-menu></span>
+</button>
+<a href=index.html class=navbar-brand>
+<img src=img/corrente-logo.png alt>
+</a>
+</div>
+<div class="collapse navbar-collapse" id=main-navbar>
+<ul class="navbar-nav mr-auto w-100 justify-content-end">
+<li class=nav-item>
+<a class=nav-link href=https://corrente.bo.it/#home>Home</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://corrente.bo.it/app/it/come-funziona>Come funziona</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://corrente.bo.it/#schedules>In evidenza</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://corrente.bo.it/#pricing>Costi</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://corrente.bo.it/app/it/condizioni>Condizioni</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://corrente.bo.it/app/it/faq>Faq</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://corrente.bo.it/#google-map-area>Mappa</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://corrente.bo.it/pagina/accedi>Accedi</a>
+</li>
+</ul>
+</div>
+</div>
+<ul class=mobile-menu>
+<li>
+<a class=page-scrool href=https://corrente.bo.it/#home>Home</a>
+</li>
+<li>
+<a class=page-scrool href=https://corrente.bo.it/app/it/come-funziona>Come funziona</a>
+</li>
+<li>
+<a class=page-scrool href=https://corrente.bo.it/#schedules>In evidenza</a>
+</li>
+<li>
+<a class=page-scrool href=https://corrente.bo.it/#pricing>Costi</a>
+</li>
+<li>
+<a class=page-scrool href=https://corrente.bo.it/app/it/condizioni>Condizioni</a>
+</li>
+<li>
+<a class=page-scrool href=https://corrente.bo.it/app/it/faq>Faq</a>
+</li>
+<li>
+<a class=page-scrool href=https://corrente.bo.it/#google-map-area>Mappa</a>
+</li>
+<li>
+<a class=page-scrool href=https://corrente.bo.it/pagina/accedi>Accedi</a>
+</li>
+</ul>
+</nav>
+</header>
+<section id=carouselHome>
+<div id=carouselCorrente class="carousel slide" data-ride=carousel>
+<ol class=carousel-indicators>
+<li data-target=#carouselCorrente data-slide-to=0 class=active></li>
+<li data-target=#carouselCorrente data-slide-to=1></li>
+<li data-target=#carouselCorrente data-slide-to=2></li>
+<li data-target=#carouselCorrente data-slide-to=3></li>
+</ol>
+<div class=carousel-inner>
+<div class="carousel-item paleblue_bg active" id=slide_0>
+<div class=container>
+<div class=row>
+<div class="col-12 col-md-6">
+<img class="d-block carousel-image pt-4" src=img/carousel_home/cta_2.png>
+</div>
+<div class="col-12 col-md-6">
+<img class="d-block carousel-image" src=img/carousel_home/img_2.png>
+</div>
+</div>
+</div>
+</div>
+<div class="carousel-item purple_bg">
+<div class=container>
+<div class=row>
+<div class="col-12 col-md-6">
+<img class="d-block carousel-image pt-4" src=img/carousel_home/cta_1.png>
+</div>
+<div class="col-12 col-md-6">
+<img class="d-block carousel-image" src=img/carousel_home/img_1.png>
+</div>
+</div>
+</div>
+</div>
+<div class="carousel-item purple_bg">
+<div class=container>
+<div class=row>
+<div class="col-12 col-md-6">
+<img class="d-block carousel-image pt-4" src=img/carousel_home/cta_3.png>
+</div>
+<div class="col-12 col-md-6">
+<img class="d-block carousel-image" src=img/carousel_home/img_3.png>
+</div>
+</div>
+</div>
+</div>
+<div class="carousel-item purple_bg">
+<div class=container>
+<div class=row>
+<div class="col-12 col-md-6">
+<img class="d-block carousel-image pt-4" src=img/carousel_home/cta_4.png>
+</div>
+<div class="col-12 col-md-6">
+<img class="d-block carousel-image" src=img/carousel_home/img_4.png>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=iscriviti>
+<div class=row>
+<div class="col-12 col-md-3 hide_mobile">
+<img src=img/iscriviti_01.png>
+</div>
+<div class="col-12 col-md-6">
+<div class="section-title-header text-center p-2">
+<p>Con l'app Corrente sei alla guida in un lampo!</p>
+<img class=w-100 src=img/zoe_fulmine.png>
+<p>Scarica l’app aggiornata, salta su una delle 335 auto elettriche o su uno dei 100 e-scooter e scopri un modo tutto nuovo di esplorare la città!</p>
+<div class=row>
+<div class="col-12 col-md-6">
+<a href=https://itunes.apple.com/it/app/corrente-car-sharing-a-bologna/id1438244477 class="app ios" target=_blank><img class="w-75 d-block mx-auto" src=img/app-badge-ios.png alt="scarica l'app IOS"></a>
+</div>
+<div class="col-12 col-md-6">
+<a href="https://play.google.com/store/apps/details?id=it.bo.corrente" class="app android" target=_blank><img class="w-75 d-block mx-auto" src=img/app-badge-android.png alt="scarica l'app Android"></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-3 hide_mobile">
+<img src=img/iscriviti_02.png>
+</div>
+</div>
+</section>
+<section id=intro_covid>
+<div class=container>
+<div>
+<div class=col-12>
+<img src=img/banner_mascherina.jpg class="d-block mx-auto">
+</div>
+</div>
+</div>
+</section>
+<section id=services class="services section-padding">
+<div class=container>
+<div class=row>
+<div class=col-12>
+<div class="section-title-header text-center">
+<p class="wow fadeInDown" data-wow-delay=0.2s id=slogan>&#200; CORRENTE. IL CAR SHARING CHE PRENOTI DAL TELEFONO<br>335 auto elettriche e 100 e-scooter a tua disposizione, per viaggiare dentro e fuori Bologna senza pagare il parcheggio.</p>
+</div>
+</div>
+</div>
+<div class="row services-wrapper">
+<div class="col-md-6 col-lg-4 col-xs-12 padding-none">
+<div class="services-item wow fadeInDown" data-wow-delay=0.2s>
+<div class=icon>
+<img class=img-fluid src=img/services/01.png alt>
+</div>
+<div class=services-content>
+<h3 id=caratteristica-1>335 auto elettriche</h3>
+<p></p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xs-12 padding-none">
+<div class="services-item wow fadeInDown" data-wow-delay=0.4s>
+<div class=icon>
+<img class=img-fluid src=img/services/02.png alt>
+</div>
+<div class=services-content>
+<h3 id=caratteristica-2>100 scooter elettrici</h3>
+<p></p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xs-12 padding-none">
+<div class="services-item wow fadeInDown" data-wow-delay=0.6s>
+<div class=icon>
+<img class=img-fluid src=img/services/03.png alt>
+</div>
+<div class=services-content>
+<h3 id=caratteristica-3>Non paghi<br>la sosta</h3>
+<p></p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xs-12 padding-none">
+<div class="services-item wow fadeInDown" data-wow-delay=0.8s>
+<div class=icon>
+<img class=img-fluid src=img/services/04.png alt>
+</div>
+<div class=services-content>
+<h3 id=caratteristica4>La prendi, la guidi e la lasci dove vuoi</h3>
+<p></p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xs-12 padding-none">
+<div class="services-item wow fadeInDown" data-wow-delay=1s>
+<div class=icon>
+<img class=img-fluid src=img/services/05.png alt>
+</div>
+<div class=services-content>
+<h3 id=caratteristica5>Scarichi l'APP<br>ti registri e parti subito</h3>
+<p></p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xs-12 padding-none">
+<div class="services-item wow fadeInDown" data-wow-delay=1.2s>
+<div class=icon>
+<img class=img-fluid src=img/services/06.png alt>
+</div>
+<div class=services-content>
+<h3 id=caratteristica6>Paghi con carta credito direttamente dall'APP</h3>
+<p></p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xs-12 padding-none">
+<div class="services-item wow fadeInDown" data-wow-delay=1.4s>
+<div class=icon>
+<img class=img-fluid src=img/services/07.png alt>
+</div>
+<div class=services-content>
+<h3 id=caratteristica7>Accedi alla ZTL e circoli sulle preferenziali (solo con le auto)</h3>
+<p></p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xs-12 padding-none">
+<div class="services-item wow fadeInDown" data-wow-delay=1.5s>
+<div class=icon>
+<img class=img-fluid src=img/services/08.png alt>
+</div>
+<div class=services-content>
+<h3 id=caratteristica8>tutta l'autonomia che ti serve</h3>
+<p></p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-4 col-xs-12 padding-none">
+<div class="services-item wow fadeInDown" data-wow-delay=1.6s>
+<div class=icon>
+<img class=img-fluid src=img/services/09.png alt>
+</div>
+<div class=services-content>
+<h3 id=caratteristica9>Sempre pronta, pensiamo noi a caricarla</h3>
+<p></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="blue_shift p-0">
+<div class=container>
+<div class=row>
+<div class="col-12 col-md-6 text-center">
+<img src=img/plus_home.jpg class=plus_img>
+<p>
+<a class="btn btn-common" data-wow-delay=0.2s href=https://corrente.bo.it/pagina/plus/>scopri di più!</a>
+</p>
+</div>
+<div class="col-12 col-md-6">
+<img src=img/banner-aziende-2.jpg>
+<a class="btn btn-common" data-wow-delay=0.2s href=https://corrente.bo.it/pagina/business/>scopri di più!</a>
+</div>
+</div>
+</div>
+</section>
+<section id=blog class=section-padding>
+<div class=container>
+<div class=row>
+<div class=col-12>
+<div class="section-title-header text-center">
+<h1 class="section-title wow fadeInUp" data-wow-delay=0.2s>Ricorda:</h1>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-xs-12">
+<div class=blog-item>
+<div>
+<img class=img-fluid src=img/memo1.png alt=Segnala>
+</div>
+<div class=descr>
+<p>Prima di prendere il veicolo, assicurati delle sue condizioni interne ed esterne e segnalale sull'app: aiutaci a mantenere le auto in condizioni ottimali e non incorrere in penali!</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-xs-12">
+<div class=blog-item>
+<div>
+<img class=img-fluid src=img/memo2.png alt="Servizio di pulizia notturna">
+</div>
+<div class=descr>
+<p>Ricorda, è vietato parcheggiare negli spazi dedicati alle auto in ricarica, riconoscibili dalla presenza delle apposite colonnine per la ricarica elettrica e dalla segnaletica dedicata, quando il veicolo non è in carica.</p>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-xs-12">
+<div class=blog-item>
+<div>
+<img class=img-fluid src=img/memo3.png alt="Servizio di pulizia notturna">
+</div>
+<div class=descr>
+<p>Ci sono zone in cui neanche Corrente può circolare. Ad esempio, a Bologna, l'anello esterno di piazza delle Medaglie d'oro, dedicato a BUS e TAXI: si può circolare solo in quello interno!<br><a href=#google-map-area>Scopri le aree non autorizzate al transito</a>.</p>
+</div>
+</div>
+</div>
+<div class="col-lg-12 col-md-6 col-xs-12">
+<div class="blog-item row mx-0">
+<div class="col-12 col-lg-5">
+<img class=img-fluid src=img/memo4.png alt="Servizio di pulizia notturna">
+</div>
+<div class="descr col-12 col-lg-7">
+<p>Parcheggiare all'Aeroporto Marconi di Bologna:<br>E' possibile parcheggiare o ritirare le auto Corrente nella Wait ZONE dell'Aeroporto che si trova a fianco al parcheggio P3. Al momento non è consentito terminare un noleggio all'aeroporto con gli scooter Corrente. <br>Un sensore all'ingresso riconoscerà la targa dell'auto Corrente quindi sarà solo necessario avvicinarsi alla sbarra per farla aprire.<br>Nel caso la sbarra non si aprisse, ritirare il ticket d'ingresso e lasciarlo obbligatoriamente nel portaoggetti davanti alla leva del cambio.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=schedules class="schedule section-padding">
+<div class=container>
+<div class=row>
+<div class=col-12>
+<div class="section-title-header text-center">
+<h1 class="section-title wow fadeInUp" data-wow-delay=0.2s id=in-evidenza>In evidenza</h1>
+<p class="wow fadeInDown subtitle" data-wow-delay=0.2s id=in-evidenza-sottotitolo>Vieni a scoprire CORRENTE</p>
+</div>
+</div>
+</div>
+<div class="schedule-area row wow fadeInDown" data-wow-delay=0.3s>
+<div class="schedule-tab-title col-md-3 col-lg-3 col-xs-12">
+<div class=table-responsive>
+<ul class="nav nav-tabs" id=myTab role=tablist>
+</ul>
+</div>
+</div>
+<div class="schedule-tab-content col-md-9 col-lg-9 col-xs-12 clearfix">
+<div class=tab-content id=myTabContent>
+<script>moment.locale('it');var feed="https://tper.bitapp.it/corrente/rss.xml?"+moment();$.ajax(feed,{accepts:{xml:"application/rss+xml"},dataType:"xml",success:function(a){$(a).find("item").each(function(a,e){var b=$(e),f=b.find("title").text(),c=moment(b.find("pubDate").text(),'YYYY-MM-DD HH:mm:ss'),d='<li class="nav-item">',g;d=d+'<a class="nav-link'+(a===0?' active':'')+'" id="blocco'+a+'-tab" data-toggle="tab" href="#blocco'+a+'" role="tab" aria-controls="blocco'+a+'">'+'<div class="item-text">'+'<h4>'+c.format('MMMM')+'</h4>'+'<h5>'+c.format('dddd D')+'</h5></div></a></li>',g='<div class="tab-pane fade show'+(a===0?' active':'')+'" id="blocco'+a+'" role="tabpanel" aria-labelledby="blocco'+a+'-tab">'+'<div id="accordion-'+a+'-0">'+'<div class="card">'+'<div id="heading-'+a+'-0">'+'<div class="collapsed card-header" data-toggle="collapse" data-target="#collapse-'+a+'-0" aria-expanded="false" aria-controls="collapse-'+a+'0">'+'<div class="images-box">'+'<img class="img-fluid" src="img/speaker/corrente.jpg" alt="">'+'</div>'+'<span class="time">'+c.format('dddd D MMMM')+'</span>'+'<h4>'+f+'</h4>'+'<h5 class="name">&nbsp;</h5>'+'</div>'+'</div>'+'<div id="collapse-'+a+'-0" class="collapse show" aria-labelledby="heading-'+a+'-0" data-parent="#accordion-'+a+'-0">'+'<div class="card-body">'+b.find("description").text()+'</div>'+'</div>'+'</div>'+'</div>'+'</div>',$('#myTab').append(d),$('#myTabContent').append(g)})}})</script>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=pricing class=section-padding>
+<div class=container>
+<div class=row>
+<div class=col-12>
+<div class="section-title-header text-center">
+<h1 class="section-title wow fadeInUp" data-wow-delay=0.2s id=costi>Costi</h1>
+</div>
+</div>
+</div>
+<div class=row>
+<div class="col-lg-4 col-sm-6 col-xa-12 mb-3 attiva">
+<div class="price-block-wrapper wow fadeInLeft" data-wow-delay=0.2s>
+<div class=icon>
+<i class="fas fa-euro-sign"></i>
+</div>
+<div class=colmun-title id=prezzo-box-1>
+<h5>ZERO costi<br>di registrazione</h5>
+</div>
+<div class=price id=prezzo-box-1-dettaglio>
+<h2>0,34 € al minuto </h2><p>AUTO</p><p>18€ all'ora<br> 59€ 1 giorno<p>SCOOTER</p><p>18€ all'ora<br> 29€ 1 giorno<br> </p><a class="btn btn-common" data-wow-delay=0.2s href=https://corrente.app/app/it/tariffe target=_blank>Vai alla pagina tariffe</a>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6 col-xa-12 mb-3 attiva">
+<div class="price-block-wrapper wow fadeInUp" data-wow-delay=0.3s>
+<div class=icon>
+<i class="far fa-id-badge"></i>
+</div>
+<div class=colmun-title id=prezzo-box-2>
+<h5>Se sei un<br>abbonato annuale TPER</h5>
+</div>
+<div class=price id=prezzo-box-2-dettaglio>
+<h2>0,24 € al minuto </h2><p>AUTO</p><p>12€ all'ora<br> 39€ 1 giorno<br><p>SCOOTER</p><p>12€ all'ora<br> 22€ 1 giorno<br> </p>
+</div>
+<p><br><a class="btn btn-common" data-wow-delay=0.2s href=https://corrente.bo.it/app/it/tariffe target=_blank>Vai al dettaglio</a><br><br></p>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6 col-xa-12 mb-3">
+<div class="price-block-wrapper wow fadeInRight" data-wow-delay=0.4s>
+<div class=icon>
+<i class="fas fa-sliders-h"></i>
+</div>
+<div class=colmun-title id=prezzo-box-3>
+<h5>Aziende</h5>
+</div>
+<div class=price id=prezzo-box-3-dettaglio>
+<p>per utilizzi business è possibile creare account dedicati in autonomia</p>
+</div>
+<p><br><a class="btn btn-common" data-wow-delay=0.2s href=https://corrente.bo.it/business target=_blank>Vai al dettaglio</a><br><br></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=google-map-area class=section-padding>
+<div class=container>
+<div class=row>
+<div class=col-12>
+<div class="section-title-header text-center">
+<h1 class="section-title wow fadeInUp" data-wow-delay=0.2s id=mappa>Mappa</h1>
+<p class="wow fadeInDown subtitle" data-wow-delay=0.2s id=mappa-sottotitolo>Aree di presa e rilascio, aree non autorizzate al transito e aree di sosta car-sharing</p>
+</div>
+</div>
+</div>
+</div>
+<div class=container-fluid id=container-map-buttons>
+<div class="row justify-content-md-center">
+<div class=col-md-auto>
+<div class="btn-group d-none d-sm-block" role=group aria-label="Controlla mappa">
+<button type=button class="btn btn-info btn-mappa active" data-active=1 data-layer=areeRilascioLayer id=aree-rilascio>Aree rilascio</button>
+<button type=button class="btn btn-info btn-mappa" data-active=0 data-layer=zoneNoTransitoLayer id=aree-non-autorizzate>Aree non autorizzate al transito</button>
+<button type=button class="btn btn-info btn-mappa" data-active=0 data-layer=parcheggiLayer id=aree-sosta>Aree di sosta car-sharing</button>
+</div>
+<div class="btn-group-vertical d-block d-sm-none" role=group aria-label="Controlla mappa">
+<button type=button class="btn btn-info btn-mappa active" data-active=1 data-layer=areeRilascioLayer id=aree-rilascio>Aree rilascio</button>
+<button type=button class="btn btn-info btn-mappa" data-active=0 data-layer=zoneNoTransitoLayer id=aree-non-autorizzate>Aree non autorizzate al transito</button>
+<button type=button class="btn btn-info btn-mappa" data-active=0 data-layer=parcheggiLayer id=aree-sosta>Aree di sosta car-sharing</button>
+</div>
+</div>
+</div>
+</div>
+<div class=container-fluid>
+<div class=row>
+<div class=col-12>
+<div id=container-map></div>
+</div>
+</div>
+</div>
+</section>
+<section id=lista_ztl class=section-padding>
+<div class=container>
+<div class=row>
+<div class="col-12 text-center pb-3"><h4>Aree non transitabili</h4></div>
+<div class="col-12 col-md-4">
+<p>
+Noleggiando le auto di Corrente potrai scoprire la città da un altro punto di vista! Avrai accesso alla ZTL di Bologna e Ferrara e alle loro corsie preferenziali, per scoprire una nuova viabilità in città (e tante scorciatoie!) LA ZTL di RIMINI non è invece transitabile.
+</p>
+<p>
+Ma le regole per la strada valgono per tutti, anche per le nostre auto 100% elettriche.
+</p>
+<p>
+Non potrai circolare in aree pedonali o nelle zone dedicate esclusivamente a taxi e mezzi pubblici. Ma non ti preoccupare: le aree vietate sono poche, facili da ricordare e ben segnalate!
+</p>
+</div>
+<div class="col-12 col-md-4">
+</div>
+</div>
+</div>
+</section>
+<section id=sponsors class=section-padding>
+<div class=container>
+<div class=row>
+<div class=col-12>
+<div class="section-title-header text-center">
+<h1 class="section-title wow fadeInUp" data-wow-delay=0.2s id=partner>Il gruppo della Mobilità</h1>
+<p class="wow fadeInDown subtitle" data-wow-delay=0.2s id=partner-sottotitolo>CORRENTE è un servizio gestito dal consorzio OMNIBUS, parte del Gruppo Tper</p>
+</div>
+</div>
+</div>
+<div class="row mb-30 text-center wow fadeInDown" data-wow-delay=0.3s>
+<div class="col-md-4 col-sm-4 col-xs-12">
+<div class=spnsors-logo>
+<a href=https://www.tper.it target=_blank title="vai al sito"><img class=img-fluid src=img/sponsors/gruppotper.png alt></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer-area section-padding">
+<div class=container>
+<div class=row>
+<div class="col-12 text-center wow fadeInUp" data-wow-delay=0.2s>
+<h3>
+<img src=https://corrente.bo.it/img/corrente-logo-bianco.png alt>
+</h3>
+<ul class=footer-social>
+<li>
+<a class=facebook href=https://www.facebook.com/corrente.auto>
+<i class=lni-facebook-filled></i>
+</a>
+</li>
+<li>
+<a class=instagram href=https://www.instagram.com/corrente.bo>
+<i class=lni-instagram></i>
+</a>
+</li>
+</ul>
+<ul class=footer-menu>
+<li>©2021 tutti I diritti riservati</li>
+<li><a href=https://corrente.bo.it/app/it/condizioni>Privacy Policy</a></li>
+<li><a href=https://corrente.bo.it/app/it/cookie-policy/>Cookie Policy</a></li>
+<li><a href=https://stiledibologna.com/>Credits</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+<a href=# class=back-to-top>
+<i class=lni-chevron-up></i>
+</a>
+<div id=preloader>
+<div class=sk-circle>
+<div class="sk-circle1 sk-child"></div>
+<div class="sk-circle2 sk-child"></div>
+<div class="sk-circle3 sk-child"></div>
+<div class="sk-circle4 sk-child"></div>
+<div class="sk-circle5 sk-child"></div>
+<div class="sk-circle6 sk-child"></div>
+<div class="sk-circle7 sk-child"></div>
+<div class="sk-circle8 sk-child"></div>
+<div class="sk-circle9 sk-child"></div>
+<div class="sk-circle10 sk-child"></div>
+<div class="sk-circle11 sk-child"></div>
+<div class="sk-circle12 sk-child"></div>
+</div>
+</div>
+<script src=https://corrente.bo.it/js/jquery-min.js></script>
+<script src=https://corrente.bo.it/js/popper.min.js></script>
+<script src=https://corrente.bo.it/js/bootstrap.min.js></script>
+<script src=https://corrente.bo.it/js/jquery.countdown.min.js></script>
+<script src=https://corrente.bo.it/js/jquery.nav.js></script>
+<script src=https://corrente.bo.it/js/jquery.easing.min.js></script>
+<script src=https://corrente.bo.it/js/wow.js></script>
+<script src=https://corrente.bo.it/js/jquery.slicknav.js></script>
+<script src=https://corrente.bo.it/js/nivo-lightbox.js></script>
+<script src=https://corrente.bo.it/js/main.js></script>
+<script src=https://corrente.bo.it/js/map.js></script>
+<script type=text/javascript src="//maps.googleapis.com/maps/api/js?key=AIzaSyC4HzJ0zW9XGeF6pqemZ3sfif7CKVdkNU4"></script>
+<script src="https://www.privacylab.it/elmo.php?code=19660464624"></script>
+</body>
+</html>

@@ -1,0 +1,540 @@
+/*GENERALI*/
+
+.navbar-expand-lg {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-expand-lg,
+.top-nav-collapse {
+    height: 90px;
+}
+
+.navbar-brand {
+    padding: 5px;
+}
+
+.navbar-brand img {
+    width: auto
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-style: italic;
+    font-weight: bold
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-title-header p {
+    font-size: 1.4em;
+	line-height:1.5em;
+}
+
+hr.separatore {
+    border: 1px solid #82dade;
+    margin: 5em auto
+}
+
+.btn-common {
+    background-color: #004a98;
+}
+
+.btn-common:hover {
+    background-color: #82dade;
+}
+
+
+/*menu mobile*/
+
+.slicknav_btn {
+    margin: 11px 15px 45px 15px;
+}
+
+.slicknav_menu ul {
+    background: #bde5e7;
+    padding: 5px;
+    position: fixed;
+    margin-top: 90px
+}
+
+
+
+.pagina p {
+    font-size: 16px;
+}
+
+.pagina figure {
+    margin-bottom:2em;
+}
+
+.sottopagina h2.intro-title {
+    margin-top: 2em
+}
+
+.sottopagina h5 {
+    margin: 1rem 0 .5rem 0;
+}
+
+.sottopagina p.intro-desc {
+    font-size: 18px;
+    line-height: 1.6em;
+    margin-bottom: 3px;
+}
+
+.sottopagina .list-specification li {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.sottopagina .video {
+    text-align: center;
+    background-color: #82dade;
+    padding: 3em
+}
+
+.sottopagina .video .icon i {
+    font-size: 150px;
+    color: #ffffff;
+}
+
+.sottopagina .card-body {
+    background-color: #f5f5f5;
+}
+
+.sottopagina img.centrata {
+    max-width: 100%;
+    display: block;
+    margin: 2em auto;
+    box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.35);
+}
+
+.notabene {
+    padding: 20px;
+    background-color: #d3f0f1;
+    margin: 2em auto
+}
+.notizia p{
+    margin-bottom: 1rem;
+}
+.notizia ul li{
+    list-style: disc;
+}
+.notizia ul{
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+/*SLIDE*/
+
+#main-slide .carousel-item .carousel-caption {
+    background: rgb(130, 218, 222);
+    /* fallback color */
+    background: rgba(130, 218, 222, 0.8);
+}
+
+.carousel-caption {
+    bottom: 30%;
+    padding-top: 6em;
+    padding-bottom: 3em;
+}
+
+#main-slide .carousel-indicators {
+    bottom: 8em;
+}
+ 
+/*APP*/
+a.app img {width:280px;}
+a.app {margin:0 10px 15px 10px;display:inline-block}
+
+/*SEZIONI*/
+
+#schedules{
+    background: #82dade;
+}
+
+#google-map-area.section-padding {
+    padding-bottom: 0;
+}
+
+
+#container-map {
+    height: 720px;
+    margin-top: 20px;
+}
+
+
+#schedules h1.section-title,
+#schedules p.subtitle{
+    color: #ffffff;
+}
+
+
+/*MEMO*/
+#blog.section-padding {
+    padding-top:40px;
+}
+.blog-item .descr {
+    padding: 30px;
+	min-height:185px
+}
+@media screen and (min-width: 981px){
+    .blog-item .descr{
+        min-height: 290px;
+    }
+}
+
+
+/*-----------------------------------------*/
+
+.services-item .icon {
+    margin-bottom: 20px;
+}
+
+.services-item .icon i {
+    width: auto;
+    height: auto;
+    font-size: 6em;
+    color: #004a98
+}
+
+.services-item .services-content h3 {
+    margin: 20px auto;
+    line-height: 1.3em;
+    font-size: 1.6em;
+    color: #777777
+}
+
+.padding-none:nth-child(4),
+.padding-none:nth-child(5),
+.padding-none:nth-child(6) {
+    border-bottom: 1px solid #dddddd;
+}
+
+.padding-none:nth-child(7),
+.padding-none:nth-child(8),
+.padding-none:nth-child(9) {
+    border-bottom: none;
+}
+
+.padding-none:nth-child(7) {
+    border-left: none;
+}
+
+
+/*-----------------------------------------*/
+
+/*#video {
+    background: url(../img/background/bg-video.jpg);
+  background-attachment: fixed;
+  overflow: hidden;
+  position: relative;
+}*/
+
+#video {
+    margin-bottom: 3em
+}
+
+#video .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*-----------------------------------------*/
+
+#gallery {
+    background: #ffffff;
+}
+
+#gallery .gallery-box:hover .overlay-box {
+    background: rgba(0, 74, 152, 0.7);
+}
+
+
+/*-----------------------------------------*/
+
+#pricing {
+    background: white;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative;
+}
+
+#pricing .price-block-wrapper {
+    @media screen and (min-width: 600px){
+       min-height: 520px 
+    }
+}
+
+#pricing .price-block-wrapper .colmun-title h5 {
+    background-color: transparent;
+    margin-bottom: 2em;
+}
+
+#pricing .price-block-wrapper .price h2 {
+    line-height: 1em;
+    margin-bottom: 20px;
+}
+
+#pricing div.coming-soon .price-block-wrapper {
+    background-color: #dbe4e4
+}
+
+#pricing div.coming-soon p.coming-soon {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 0.9em;
+    font-style: italic;
+    background-color: #8babab;
+    padding: 8px;
+    color: #ffffff;
+    font-weight: bold
+}
+
+#pricing .price-block-wrapper .icon i {
+    font-size: 80px;
+}
+
+#pricing .btn-common {
+    background-color: #82dade;
+}
+
+#pricing .btn-common:hover {
+    background-color: #004a98;
+}
+
+
+
+/*-----------------------------------------
+
+.accordion .header-title::after {content: "\e940";}
+.accordion .collapsed::after {content: "\e93a";}*/
+
+.accordion .card .header-title {
+    padding: 10px 45px
+}
+
+.accordion .card-header i {
+    border-right: 0;
+}
+
+.card .lni-map-marker {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    border: 0
+}
+
+.card .lni-map-marker::before {
+    font-size: 2em;
+    font-weight: bold;
+    color: #f08356
+}
+
+.card-body {
+    font-weight: bold;
+    background-color: #fbca47;
+    font-size: 1.1em;
+}
+
+
+/*-----------------------------------------*/
+
+#event-slides .container {
+    background-color: #ffffff;
+    padding: 1.6em;
+}
+
+.home #event-slides.section-padding {
+    padding: 10px 0 140px 0;
+}
+
+#event-slides p.intro-desc {
+    font-size: 18px
+}
+
+
+/*-----------------------------------------*/
+
+
+/*-----------------------------------------*/
+
+.schedule .show .card-body {
+    background: #e8f5f6;
+}
+
+.schedule .schedule-tab-title .item-text h4 {
+    margin-bottom: 0
+}
+
+.schedule .card-header h4 {
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+.card-body p {
+    font-size: 16px
+}
+
+
+/*FOOTER*/
+
+footer a:link,
+footer a:visited {
+    color: #ffffff
+}
+
+footer a:hover {
+    color: #82dade;
+}
+
+#copyright {
+    background: #003d7c;
+}
+
+
+/*SOTTOPAGINE*/
+
+figure img {
+    max-width:100%;
+}
+
+
+#faq .card-body {
+    background-color: #77c7cb;
+    color: #ffffff;
+}
+#faq p.wow.fadeInDown {
+    margin-top:3em
+}
+
+#faq ul li {
+    font-weight:bold
+}
+
+#faq .header-title {
+    font-size:1em
+}
+
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+.navbar-expand-lg .navbar-nav .nav-link {padding: 0 8px!important;font-size:13px}
+    }
+
+
+
+@media (max-width:1000px) {
+    #main-slide .carousel-indicators {
+        bottom: 5em;
+    }
+
+    #schedules p.subtitle {
+        display: none
+    }
+    .nav-tabs .nav-item {
+        display: block;
+        width: 100%;
+    }
+    .schedule .schedule-tab-title .nav-tabs .nav-link {
+        display: block;
+        width: 100%!important;
+        height: auto;
+        padding: 10px
+    }
+    .padding-none:nth-child(1),
+    .padding-none:nth-child(2),
+    .padding-none:nth-child(3),
+    .padding-none:nth-child(4),
+    .padding-none:nth-child(5),
+    .padding-none:nth-child(6),
+    .padding-none:nth-child(7),
+    .padding-none:nth-child(8),
+    .padding-none:nth-child(9) {
+        border: 0!important
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-toggler {
+        display: block;
+    }
+    .slicknav_menu {
+        display: block;
+    }
+    .navbar-header {
+        width: 100%
+    }
+    .navbar-brand {
+        position: fixed
+    }
+    .navbar-toggler {
+        display: none;
+    }
+    .slicknav_menu ul {
+        left: 0;
+    }
+}
+
+@media (max-width:560px) {
+    .section-padding {
+        padding: 2em 0;
+    }
+    .sottopagina .section-padding {
+        padding: 70px 0;
+    }
+    .schedule .schedule-tab-title .nav-tabs .nav-link h4,
+    .schedule .schedule-tab-title .item-text h5 {
+        display: inline
+    }
+    .services-wrapper {
+        margin-top: 0
+    }
+    .services-item {
+        padding: 0 15px;
+    }
+    #container-map-buttons {
+        padding-bottom: 0;
+    }
+	/*MEMO*/
+	.blog-item .descr p{
+		font-size:16px
+	}
+}
+
+#iscriviti {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.iscriviti-text {
+    font-size: 2em !important;
+}
+
+.btn-mappa {
+    color: #fff;
+    background-color: #82DADE;
+    border-color: #65DADE;
+}
+
+.btn-mappa:not(:disabled):not(.disabled).active {
+    color: #fff;
+    background-color: #004A98;
+    border-color: #004AA1;
+}

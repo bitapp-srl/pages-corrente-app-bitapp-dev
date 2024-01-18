@@ -1,0 +1,81 @@
+/* Pricing Ticket */
+#pricing{
+	background: white;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: relative;
+	.price-block-wrapper{
+		text-align: center;
+		display: inline-block;
+	    width: 100%;
+	    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	    background: #FF3B77;
+	    padding: 30px;
+	    color: white;
+	    .icon{
+	    	padding: 20px;
+	    	i{
+	    		font-size: 60px;
+	    		color: white;
+	    	}
+	    }
+	    .colmun-title{
+	    	margin-top: 15px;
+	    	h5{
+	    		font-size: 18px;
+			    line-height: 1.5em;
+			    margin-bottom: 5px;
+			    font-weight: 700;
+			    background: #ffffff;
+			    text-transform: uppercase;
+	    	}
+	    }
+	    .price{
+	    	padding-bottom: 10px;
+		    transition: all 500ms ease;
+		    -webkit-transition: all 500ms ease;
+		    -moz-transition: all 500ms ease;
+			h2{
+				font-size: 38px;
+			    color: white;
+			    line-height: 42px;
+			    margin: 0;
+			}
+			p{
+				font-size: 15px;
+			    font-weight: 700;
+			    letter-spacing: 1px;
+			    line-height: 1.5em;
+			    text-transform: uppercase;
+			    transition: all 500ms ease;
+			    -webkit-transition: all 500ms ease;
+			    -moz-transition: all 500ms ease;
+			}
+	    }
+	    .pricing-list{
+		    padding: 10px  60px 10px 78px;
+		    text-align: left;
+		    ul{
+				padding-bottom: 15px;
+		    	li{
+				    font-size: 15px;
+				    color: #212121;
+				    font-weight: 400;
+				    padding: 2px 0px;
+				    i{
+				    	margin-right: 7px;
+				    	font-size: 12px;
+				    	color: $preset;
+				    }
+		    	}
+		    }
+	    }
+	    .btn{
+	    	background:#21C2D9;
+	    	i{
+	    		font-size: 12px;
+	    		margin-right: 5px;
+	    	}
+	    }
+	}
+}

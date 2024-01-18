@@ -1,0 +1,539 @@
+<!doctype html><html lang=it-it>
+<head>
+<meta charset=utf-8>
+<meta name=description content="CORRENTE è il car sharing che prenoti dal telefono. Fino a 335 auto elettriche a tua disposizione, per viaggiare dentro e fuori Bologna senza pagare il parcheggio.">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title>Corrente - Il Car Sharing che ti carica</title>
+<script type=text/plain data-cookiecategory=analytics>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://analytics.tper.it/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '3']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+<script src=https://corrente.bo.it/js/jquery-min.js></script>
+<script src=//cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js></script>
+<script src=//cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/it.js></script>
+<link rel=stylesheet type=text/css href=https://corrente.bo.it/css/bootstrap.min.css>
+<link rel=stylesheet type=text/css href=https://corrente.bo.it/fonts/line-icons.css>
+<link rel=stylesheet href=https://use.fontawesome.com/releases/v5.3.1/css/all.css integrity=sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU crossorigin=anonymous>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel=stylesheet>
+<link rel=stylesheet type=text/css href=https://corrente.bo.it/css/slicknav.css>
+<link rel=stylesheet type=text/css href=https://corrente.bo.it/css/nivo-lightbox.css>
+<link rel=stylesheet type=text/css href=https://corrente.bo.it/css/animate.css>
+<link rel=stylesheet type=text/css href=https://corrente.bo.it/scss/main.css>
+<link rel=stylesheet type=text/css href=https://corrente.bo.it/css/corrente.css>
+<link rel=stylesheet type=text/css href=https://corrente.bo.it/scss/responsive.css>
+</head>
+<style>.piccolaimmagine{width:200px}.red-dot{height:25px;width:25px;background-color:red;border-radius:50%;display:inline-block}.yellow-dot{height:25px;width:25px;background-color:#ff0;border-radius:50%;display:inline-block}.green-dot{height:25px;width:25px;background-color:green;border-radius:50%;display:inline-block}</style>
+<body class=sottopagina>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NR4J75" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript>
+<header id=header-wrap>
+<nav class="navbar navbar-expand-lg fixed-top top-nav-collapse">
+<div class=container>
+<div class=navbar-header>
+<button class=navbar-toggler type=button data-toggle=collapse data-target=#main-navbar aria-controls=main-navbar aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+<span class=icon-menu></span>
+<span class=icon-menu></span>
+<span class=icon-menu></span>
+</button>
+<a href=index.html class=navbar-brand><img src=https://corrente.bo.it/img/corrente-logo.png alt></a>
+</div>
+<div class="collapse navbar-collapse" id=main-navbar>
+<ul class="navbar-nav mr-auto w-100 justify-content-end">
+<li class=nav-item>
+<a class=nav-link href=https://corrente.bo.it/#home>Home</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://corrente.bo.it/app/it/come-funziona>Come funziona</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://corrente.bo.it/#schedules>In evidenza</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://corrente.bo.it/#pricing>Costi</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://corrente.bo.it/app/it/condizioni>Condizioni</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://corrente.bo.it/app/it/faq>Faq</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://corrente.bo.it/#google-map-area>Mappa</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=https://corrente.bo.it/pagina/accedi>Accedi</a>
+</li>
+</ul>
+</div>
+</div>
+<ul class=mobile-menu>
+<li>
+<a class=page-scrool href=https://corrente.bo.it/#home>Home</a>
+</li>
+<li>
+<a class=page-scrool href=https://corrente.bo.it/app/it/come-funziona>Come funziona</a>
+</li>
+<li>
+<a class=page-scrool href=https://corrente.bo.it/#schedules>In evidenza</a>
+</li>
+<li>
+<a class=page-scrool href=https://corrente.bo.it/#pricing>Costi</a>
+</li>
+<li>
+<a class=page-scrool href=https://corrente.bo.it/app/it/condizioni>Condizioni</a>
+</li>
+<li>
+<a class=page-scrool href=https://corrente.bo.it/app/it/faq>Faq</a>
+</li>
+<li>
+<a class=page-scrool href=https://corrente.bo.it/#google-map-area>Mappa</a>
+</li>
+<li>
+<a class=page-scrool href=https://corrente.bo.it/pagina/accedi>Accedi</a>
+</li>
+</ul>
+</nav>
+</header>
+<section id=faq class=section-padding>
+<div class=container>
+<div class=row>
+<div class=col-12>
+<div class="section-title-header text-center">
+<h1 class="section-title wow fadeInUp" data-wow-delay=0.2s>FAQ</h1>
+<p class="wow fadeInDown" data-wow-delay=0.2s>Domande frequenti</p>
+</div>
+</div>
+</div>
+<div class=row>
+<div class=col-12>
+<div class="section-title-header text-center">
+<p class="wow fadeInDown" data-wow-delay=0.2s>LE DOMANDE PIÙ RECENTI</p>
+</div>
+</div>
+</div>
+<div class=row>
+<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+<div class=accordion>
+<div class=card>
+<div class=card-header id=abbonato>
+<div class=header-title data-toggle=collapse data-target=#questionblu aria-expanded=false aria-controls=questionblu>
+<i class="far fa-question-circle"></i>Devo pagare la sosta se parcheggio in altri comuni al di fuori dell'area di copertura di Corrente?
+</div>
+</div>
+<div id=questionblu class=collapse aria-labelledby=fronte data-parent=#questionblu>
+<div class=card-body>
+<p>
+Sì, nei comuni non inclusi nell'area di copertura del servizio, valgono le tariffe ordinarie previste dal gestore locale della sosta.
+</p>
+<p>
+È possibile parcheggiare <strong>gratuitamente</strong> sulle <strong>strisce blu </strong>a <strong>Bologna, Ferrara e Casalecchio di Reno e Rimini</strong>. A Bologna e a Casalecchio di Reno, si può parcheggiare anche nei posti riservati ai residenti (strisce bianche). A Ferrara e a Rimini non è possibile posteggiare sugli stalli riservati ai residenti.
+</p>
+</div>
+</div>
+</div>
+<div class=row>
+<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+<div class=accordion>
+<div class=card>
+<div class=card-header id=abbonato>
+<div class=header-title data-toggle=collapse data-target=#questiongiorno aria-expanded=false aria-controls=questiongiorno>
+<i class="far fa-question-circle"></i>Quando scatta il pagamento della tariffa giornaliera?
+</div>
+</div>
+<div id=questiongiorno class=collapse aria-labelledby=abbonato data-parent=#questiongiorno>
+<div class=card-body>
+<p>🗲 I pagamenti giornalieri vengono addebitati al raggiungimento del tetto orario equivalente. Secondo la tariffazione standard (59€ al giorno, 18€ all'ora, 0,34 al minuto) il tetto si raggiunge a 3h e 15 minuti (18€x3h + 0,34€x15'); secondo la tariffazione abbonati (39€ al giorno, 12€ all'ora, 0,24€ al minuto) il tetto si raggiunge a 3h e 13 minuti (12€x3h + 0,24€x13') Da quel momento si potrà continuare a guidare, senza ulteriori addebiti, fino al termine delle 24h dall'inizio del noleggio. Superato eventualmente questa soglia ricomincerà il conteggio al minuto, orario, ecc... 🗲</p>
+</div>
+</div>
+</div>
+<div class=card>
+<div class=card-header id=blq>
+<div class=header-title data-toggle=collapse data-target=#questionblq aria-expanded=false aria-controls=questionblq>
+<i class="far fa-question-circle"></i> Posso lasciare la macchina in Aeroporto?
+</div>
+</div>
+<div id=questionblq class=collapse aria-labelledby=blq data-parent=#question>
+<div class=card-body>
+<p>Si! È possibile lasciare Corrente presso la Waitzone dell'aeroporto Marconi di Bologna. Il viaggio per l’aeroporto ha la stessa tariffa di qualunque altro spostamento con CORRENTE, oltre a un contributo supplementare di 5 euro, indipendentemente dal numero degli occupanti la vettura.
+<p>Il meccanismo inverso è assolutamente identico. Chi atterra al “Marconi” può prendere una vettura dalla Waitzone. Il consiglio è di farlo dopo aver verificato la disponibilità di una vettura e dopo averla prenotata (i primi 30 minuti di prenotazione sono gratuiti). Da Aprile 2023 è possibile prenotare la vettura fino a 24h prima: puoi prenotarla prima di decollare per essere certo di trovarla al tuo arrivo a Bologna. </p>
+<p><a href=https://corrente.bo.it/pagina/blq>vai alla pagina con tutte le indicazioni</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=row>
+<div class=col-12>
+<div class="section-title-header text-center">
+<p class="wow fadeInDown" data-wow-delay=0.2s>ISCRIZIONE</p>
+</div>
+</div>
+</div>
+<div class=row>
+<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+<div class=accordion>
+<div class=card>
+<div class=card-header id=headingOne>
+<div class=header-title data-toggle=collapse data-target=#questionOne aria-expanded=true aria-controls=collapseOne>
+<i class="far fa-question-circle"></i> Chi può utilizzare Corrente?
+</div>
+</div>
+<div id=questionOne class=collapse aria-labelledby=headingOne data-parent=#question>
+<div class=card-body>
+<p>Chiunque abbia compiuto 18 anni e abbia la patente di guida.</p>
+</div>
+</div>
+</div>
+<div class=card>
+<div class=card-header id=headingTwo>
+<div class=header-title data-toggle=collapse data-target=#questionTwo aria-expanded=false aria-controls=questionTwo>
+<i class="far fa-question-circle"></i> Come mi iscrivo?
+</div>
+</div>
+<div id=questionTwo class=collapse aria-labelledby=headingTwo data-parent=#question>
+<div class=card-body>
+<p>Puoi iscriverti a CORRENTE in pochi minuti tramite App o sul sito www.corrente.app .</p>
+<p>L'iscrizione è gratuita e tutta online, senza bisogno di inviare o ricevere alcun documento cartaceo.</p>
+<p>Tieni a portata di mano patente, documento d’identità, codice fiscale e una carta di credito, anche prepagata.</p>
+<p>Al termine della registrazione e al buon esito della verifica dei documenti, riceverai una email di conferma che l'iscrizione è avvenuta con successo con il codice PIN personale che ti servirà per l'utilizzo dei veicoli.</p>
+<p>Per le patenti estere il team Corrente si riserva fino a 10 giorni per convalidare la procedura di iscrizione.</p>
+</div>
+</div>
+</div>
+<div class=card>
+<div class=card-header id=headingThree>
+<div class=header-title data-toggle=collapse data-target=#questionThree aria-expanded=false aria-controls=questionThree>
+<i class="far fa-question-circle"></i> Sono un’azienda e desidero convenzionarmi a Corrente, cosa faccio?
+</div>
+</div>
+<div id=questionThree class=collapse aria-labelledby=headingThree data-parent=#question>
+<div class=card-body>
+<p>Rivolgiti al nostro Team tramite la seguente mail: commerciale@corrente.bo.it, ti assisteranno durante tutto il processo.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=row>
+<div class=col-12>
+<div class="section-title-header text-center">
+<p class="wow fadeInDown" data-wow-delay=0.2s>NOLEGGIO</p>
+</div>
+</div>
+</div>
+<div class=row>
+<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+<div class=accordion>
+<div class=card>
+<div class=card-header id=headingOne2>
+<div class=header-title data-toggle=collapse data-target=#questionOne2 aria-expanded=true aria-controls=collapseOne>
+<i class="far fa-question-circle"></i> Come posso noleggiare un’auto?
+</div>
+</div>
+<div id=questionOne2 class=collapse aria-labelledby=headingOne data-parent=#question>
+<div class=card-body>
+<p>Trova il veicolo più vicino consultando la mappa sull'app, oppure noleggia il primo che incontri per strada. Ricorda che la prenotazione è gratuita per i primi 30 minuti e ha una durata massima di 90 minuti (dal 91' minuto fino ad un massimo di 24h si paga la tariffa standard)</p>
+<p>Se ti accorgi di non aver più bisogno del veicolo che hai prenotato o di non fare in tempo a raggiungerlo entro 90 minuti, cancella la prenotazione così da renderlo disponibile per altri clienti.</p>
+</div>
+</div>
+</div>
+<div class=card>
+<div class=card-header id=headingTwo2>
+<div class=header-title data-toggle=collapse data-target=#questionTwo2 aria-expanded=false aria-controls=questionTwo>
+<i class="far fa-question-circle"></i> Come apro l’auto noleggiata?
+</div>
+</div>
+<div id=questionTwo2 class=collapse aria-labelledby=headingTwo data-parent=#question>
+<div class=card-body>
+<p>Una volta raggiunto il veicolo basterà cliccare sul bottone "Apri", presente all'interno della schermata della vettura prenotata nell’App. Puoi utilizzare il bluetooth per aprire e chiudere uin un click, oppure utilizzare la normale apertura tramite rete dati (inserendo il PIN). La scheda per l’accensione è necessaria solo per i primi veicoli della flotta, e la trovi all’interno della vettura, nel vano porta oggetti, collegata ad un magnete.</p>
+<p>Se trovi il veicolo danneggiato, molto sporco e se mancano le chiavi, effettua una segnalazione attraverso l'App oppure chiama il Servizio Clienti.</p>
+<p>Nel caso riterrai che il veicolo non sia idoneo all'utilizzo, puoi decidere di rilasciarlo e sceglierne un altro.</p>
+</div>
+</div>
+</div>
+<div class=card>
+<div class=card-header id=headingThree>
+<div class=header-title data-toggle=collapse data-target=#questionFive aria-expanded=false aria-controls=questionFive>
+<i class="far fa-question-circle"></i> Come guido l'auto?
+</div>
+</div>
+<div id=questionFive class=collapse aria-labelledby=headingThree data-parent=#question>
+<div class=card-body>
+<p>Nell'APP, ogni vettura ha una sezione "istruzioni" in cui sono riassunte le principali operazioni per guidarla.</p>
+<p>E’ necessario inserire il codice PIN sull’App.</p>
+<p>Le auto hanno il cambio automatico (il piede sinistro non serve!). Per avviarle è necessario lasciare la leva in posizione P o N a seconda del modello, tenere premuto il pedale del freno e premere sul bottone START situato sulla plancia, a destra del volante. Una volta avviate le auto indicheranno lo stato con la scritta READY sul cruscotto (sono molto silenziose, potresti non accorgerti dell'accensione del motore). R serve per la marcia indietro, N è l'equivalente della folle, D è la marcia avanti. In alcuni modelli è presente anche la posizione B per la marcia avanti con maggior recupero di energia in frenata (maggior autonomia)</p>
+</div>
+</div>
+</div>
+<div class=card>
+<div class=card-header id=headingThree>
+<div class=header-title data-toggle=collapse data-target=#questionFive aria-expanded=false aria-controls=questionFive>
+<i class="far fa-question-circle"></i> È sempre necessario utilizzare il PIN?
+</div>
+</div>
+<div id=questionFive class=collapse aria-labelledby=headingThree data-parent=#question>
+<div class=card-body>
+<p>E’ necessario inserire il codice PIN sull’App, solo quando non si utilizza la funzione di apertura e chiusura via Bluetooth.</p>
+<p></p>
+</div>
+</div>
+</div>
+<div class=card>
+<div class=card-header id=headingThree>
+<div class=header-title data-toggle=collapse data-target=#questionSix aria-expanded=false aria-controls=questionSix>
+<i class="far fa-question-circle"></i> Dove posso guidare?
+</div>
+</div>
+<div id=questionSix class=collapse aria-labelledby=headingThree data-parent=#question>
+<div class=card-body>
+<p>Con Corrente puoi guidare in ZTL e sulle corsie preferenziali, rispettando il codice della strada. Non puoi circolare in zone pedonali e nelle aree dedicate esclusivamente a taxi e mezzi pubblici. Ad esempio a BOLOGNA: Archiginnasio; Azzo Gardino; i due anelli esterni di Piazza Medaglie d'Oro; Piazza Aldrovandi; Area pedonale di Piazza Santo Stefano; Area pedonale di Via de’ Falegnami; Area pedonale di Via delle Moline.</p>
+<p>
+Ricorda anche che a Bologna il sabato, la domenica e nei giorni festivi ci sono i T’DAYS e l'area pedonale si amplia. A Rimini non puoi girare nella zona ZTL e non puoi viaggiare nelle corsie preferenziali. <br>
+Se hai altri dubbi puoi visitare la sezione Come funziona, oppure contattarci.
+</p>
+</div>
+</div>
+</div>
+<div class=card>
+<div class=card-header id=headingThree>
+<div class=header-title data-toggle=collapse data-target=#questionN1 aria-expanded=false aria-controls=questionN1>
+<i class="far fa-question-circle"></i> Per quanti chilometri posso guidare?
+</div>
+</div>
+<div id=questionN1 class=collapse aria-labelledby=headingThree data-parent=#question>
+<div class=card-body>
+<p>Le auto cariche al 100% hanno un’autonomia di circa 300 chilometri (395 le più recenti), che è strettamente legata allo stile di guida dell'auto.</p>
+<p>Quando noleggi una Corrente, avrai sempre l'indicazione dell'autonomia in % e in km dell'auto sull'app e all'interno della macchina sul cruscotto. </p> <p>In base al tipo di noleggio che effettui, ci sono un numero di km inclusi, ad esmpio, il noleggio giornaliero include 150 km.</p>
+<p>Ricordati di non lasciare l’auto con un’autonomia inferiore a 30 km!</p>
+</div>
+</div>
+</div>
+<div class=card>
+<div class=card-header id=headingThree>
+<div class=header-title data-toggle=collapse data-target=#questionN2 aria-expanded=false aria-controls=questionN2>
+<i class="far fa-question-circle"></i> Dove posso parcheggiare?
+</div>
+</div>
+<div id=questionN2 class=collapse aria-labelledby=headingThree data-parent=#question>
+<div class=card-body>
+<p>Per terminare il noleggio, parcheggia il veicolo dentro l’area di copertura e premi il pulsante “termina noleggio”. </p><br>
+<p>È possibile parcheggiare sulle <strong>strisce blu </strong>gratuitamente e, a Bologna e Casalecchio di Reno, anche nei posti riservati ai residenti (strisce bianche). A Ferrara e a Rimini non è possibile posteggiare sugli stalli riservati ai residenti</p>
+<p>Ricordati di non rilasciare il veicolo in una zona dove non è possibile rilevare il segnale GPS e/o il segnale GSM, tipicamente nei garage sotterranei, se non in luoghi espressamente indicati dal Gestore.</p>
+<p>Il veicolo, inoltre, non può essere rilasciato su aree di sosta con limitazione giornaliera o oraria di parcheggio.</p>
+<p>Puoi anche parcheggiare l’auto al di fuori delle aree di copertura del servizio ma solo in modalità “sosta”, durante la quale l’auto è ancora nella tua disponibilità ed il conteggio dei minuti della corsa prosegue.</p>
+<p>Prima di scendere dall'auto controlla di aver chiuso i finestrini, spento le luci e tirato il freno a mano e riposto la scheda di accensione nel vano porta oggetti.</p>
+</div>
+</div>
+</div>
+<div class=card>
+<div class=card-header id=headingThree>
+<div class=header-title data-toggle=collapse data-target=#questionN3 aria-expanded=false aria-controls=questionN3>
+<i class="far fa-question-circle"></i> Come faccio a sapere se mi trovo al di fuori dell'area operativa?
+</div>
+</div>
+<div id=questionN3 class=collapse aria-labelledby=headingThree data-parent=#question>
+<div class=card-body>
+<p>Puoi sempre verificare la tua posizione e visualizzare l'area operativa nell'app Corrente, quando prenoti un veicolo e sul sito corrente.app</p>
+</div>
+</div>
+</div>
+<div class=card>
+<div class=card-header id=headingThree>
+<div class=header-title data-toggle=collapse data-target=#questionN4 aria-expanded=false aria-controls=questionN4>
+<i class="far fa-question-circle"></i> Devo ricaricare le auto?
+</div>
+</div>
+<div id=questionN4 class=collapse aria-labelledby=headingThree data-parent=#question>
+<div class=card-body>
+<p>No, ci occupiamo noi di ricaricare le auto. Quando le auto sono scariche, non sono disponibili per il noleggio. </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=row>
+<div class=col-12>
+<div class="section-title-header text-center">
+<p class="wow fadeInDown">PAGAMENTI</p>
+</div>
+</div>
+</div>
+<div class=row>
+<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+<div class=accordion>
+<div class=card>
+<div class=card-header id=headingOne2>
+<div class=header-title data-toggle=collapse data-target=#questionP1 aria-expanded=true aria-controls=questionP1>
+<i class="far fa-question-circle"></i> Quanto costa Corrente?
+</div>
+</div>
+<div id=questionP1 class=collapse aria-labelledby=headingOne data-parent=#question>
+<div class=card-body>
+<p>Consulta <a href=../tariffe/index.html>qui</a> le nostre tariffe e le promozioni.</p>
+</div>
+</div>
+</div>
+<div class=card>
+<div class=card-header id=headingTwo2>
+<div class=header-title data-toggle=collapse data-target=#questionP2 aria-expanded=false aria-controls=questionP2>
+<i class="far fa-question-circle"></i> Come pago il servizio di Car-sharing?
+</div>
+</div>
+<div id=questionP2 class=collapse aria-labelledby=headingTwo data-parent=#question>
+<div class=card-body>
+<p>L'importo sarà subito addebitato sulla tua carta al termine del noleggio.</p>
+<p>Al termine di ogni noleggio, riceverai una mail di riepilogo contenente i seguenti dati: n° noleggio, targa veicolo, luogo e orario di inizio e fine noleggio, durata complessiva (i minuti parzialmente utilizzati vengono considerati per arrotondamento pari a sessanta secondi a partire dal trentunesimo secondo), chilometri totali percorsi e importo complessivo addebitato.</p>
+</div>
+</div>
+</div>
+<div class=card>
+<div class=card-header id=headingThree>
+<div class=header-title data-toggle=collapse data-target=#questionP3 aria-expanded=false aria-controls=questionP3>
+<i class="far fa-question-circle"></i> Ci sono costi aggiuntivi?
+</div>
+</div>
+<div id=questionP3 class=collapse aria-labelledby=headingThree data-parent=#question>
+<div class=card-body>
+<p>Il noleggio ha un tariffario al minuto e prevede dei costi aggiuntivi al km per viaggi oltre determinate soglie chilometriche. È possibile che vengano addebitati costi aggiuntivi per prendere o rilasciare il veicolo in aree particolari, come ad esempio all'Aeroporto di Bologna o cambiando città fra presa e rilascio. </p>
+</div>
+</div>
+</div>
+<div class=card>
+<div class=card-header id=headingThree>
+<div class=header-title data-toggle=collapse data-target=#questionP4 aria-expanded=false aria-controls=questionP4>
+<i class="far fa-question-circle"></i> Se prendo una multa o faccio un incidente?
+</div>
+</div>
+<div id=questionP4 class=collapse aria-labelledby=headingThree data-parent=#question>
+<div class=card-body>
+<p>Nel caso in cui il conducente sia andato incontro a delle contravvenzioni, queste, sono a suo carico.</p>
+<p>I veicoli sono assicurati ma in caso di incidente, qualora la responsabilità fosse imputata al conducente che ha noleggiato, a questi verrà emesso un addebito di importo massimo pari alla franchigia di 500 €.</p>
+</div>
+</div>
+</div>
+<div class=card>
+<div class=card-header id=headingThree>
+<div class=header-title data-toggle=collapse data-target=#questionP5 aria-expanded=false aria-controls=questionP5>
+<i class="far fa-question-circle"></i> Che succede in caso di problemi con il pagamento?
+</div>
+</div>
+<div id=questionP5 class=collapse aria-labelledby=headingThree data-parent=#question>
+<div class=card-body>
+<p>Se l'importo dovuto non può essere addebitato, il tuo account verrà temporaneamente bloccato, verranno effettuati altri tentativi di addebito dell'importo dal tuo profilo di pagamento.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=row>
+<div class=col-12>
+<div class="section-title-header text-center">
+<p class="wow fadeInDown">ALTRE REGOLE?</p>
+</div>
+</div>
+</div>
+<div class=row>
+<div class=col-12>
+<img src=https://corrente.bo.it/assets/repo/ricorda.png>
+<ul>
+<li>Ricorda: è vietato lasciare il veicolo con meno di 30 km di autonomia (art. 10 regolamento)</li>
+<li>Niente alcol (0,0 per mille)</li>
+<li>Niente fumo</li>
+<li>Niente animali</li>
+<li>Non più di 4 passeggeri oltre al conducente</li>
+<li>Non rimuovere oggetti e attrezzature dall’auto</li>
+<li>Non permettere ad altri di guidare l’auto che hai noleggiato</li>
+<li>Tratta l’auto con cura</li>
+<li>Segnala eventuali danni al Servizio clienti, dall'apposita sezione dell'app, per favore.</li>
+</ul>
+</div>
+</div>
+<div class=row>
+<div class=col-12>
+<div class="section-title-header text-center">
+<p class="wow fadeInDown">COME POSSO CONTATTARVI?</p>
+</div>
+</div>
+</div>
+<div class=row>
+<div class=col-12>
+<p><strong>Tramite Call Center al 051 602 9993 o all’indirizzo <a href=mailto:supporto@corrente.bo.it title="invia email">supporto@corrente.bo.it</a></strong></p>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer-area section-padding">
+<div class=container>
+<div class=row>
+<div class="col-12 text-center wow fadeInUp" data-wow-delay=0.2s>
+<h3>
+<img src=https://corrente.bo.it/img/corrente-logo-bianco.png alt>
+</h3>
+<ul class=footer-social>
+<li>
+<a class=facebook href=https://www.facebook.com/corrente.auto>
+<i class=lni-facebook-filled></i>
+</a>
+</li>
+<li>
+<a class=instagram href=https://www.instagram.com/corrente.bo>
+<i class=lni-instagram></i>
+</a>
+</li>
+</ul>
+<ul class=footer-menu>
+<li>©2021 tutti I diritti riservati</li>
+<li><a href=https://corrente.bo.it/app/it/condizioni>Privacy Policy</a></li>
+<li><a href=https://corrente.bo.it/app/it/cookie-policy/>Cookie Policy</a></li>
+<li><a href=https://stiledibologna.com/>Credits</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+<a href=# class=back-to-top>
+<i class=lni-chevron-up></i>
+</a>
+<div id=preloader>
+<div class=sk-circle>
+<div class="sk-circle1 sk-child"></div>
+<div class="sk-circle2 sk-child"></div>
+<div class="sk-circle3 sk-child"></div>
+<div class="sk-circle4 sk-child"></div>
+<div class="sk-circle5 sk-child"></div>
+<div class="sk-circle6 sk-child"></div>
+<div class="sk-circle7 sk-child"></div>
+<div class="sk-circle8 sk-child"></div>
+<div class="sk-circle9 sk-child"></div>
+<div class="sk-circle10 sk-child"></div>
+<div class="sk-circle11 sk-child"></div>
+<div class="sk-circle12 sk-child"></div>
+</div>
+</div>
+<script src=https://corrente.bo.it/js/jquery-min.js></script>
+<script src=https://corrente.bo.it/js/popper.min.js></script>
+<script src=https://corrente.bo.it/js/bootstrap.min.js></script>
+<script src=https://corrente.bo.it/js/jquery.countdown.min.js></script>
+<script src=https://corrente.bo.it/js/jquery.nav.js></script>
+<script src=https://corrente.bo.it/js/jquery.easing.min.js></script>
+<script src=https://corrente.bo.it/js/wow.js></script>
+<script src=https://corrente.bo.it/js/jquery.slicknav.js></script>
+<script src=https://corrente.bo.it/js/nivo-lightbox.js></script>
+<script src=https://corrente.bo.it/js/main.js></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>CORRENTE_AreaRilascio_20181004_OK.kml</name>
+	<StyleMap id="msn_ylw-pushpin4">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>6600aaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin4">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>6611b8ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>6600aaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin4">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>6611b8ff</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>CORRENTE_20181004</name>
+		<open>1</open>
+		<Placemark>
+			<name>TPER_DEGASPERI</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							11.26002979366676,44.52212916969345,0 11.26420394343711,44.51721557347286,0 11.26661101707178,44.52040079603159,0 11.26034621460447,44.52264335637891,0 11.26002979366676,44.52212916969345,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>CORRENTE_20181004</name>
+			<styleUrl>#msn_ylw-pushpin4</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							11.35395716216774,44.55287461662717,0 11.35126232234787,44.54793805733223,0 11.34775601372778,44.54457724245415,0 11.33481809640733,44.53233579809191,0 11.33149271684014,44.52814287579131,0 11.32922158043812,44.52519044303159,0 11.32089248894786,44.51896932234386,0 11.3062625399055,44.51929330245515,0 11.29524664388229,44.51127260594531,0 11.29080691582462,44.5038831152596,0 11.2811969215427,44.49802769108492,0 11.27891395123588,44.49427440374527,0 11.28316618453347,44.48907601015016,0 11.28650613588168,44.49035598789142,0 11.28852014426725,44.48860208920937,0 11.29268359770052,44.48957645799795,0 11.29482918179587,44.487478299923,0 11.29864721460003,44.48862067253585,0 11.30221214670015,44.4905162016692,0 11.310623714207,44.4898498778059,0 11.31739335597921,44.48453358151513,0 11.31894150652701,44.48876302665012,0 11.34201053959466,44.4829956874275,0 11.33878527552756,44.48082559838853,0 11.34608530834394,44.4766665384817,0 11.35194181959611,44.47795316376182,0 11.36071767150726,44.47552197083578,0 11.36218723726739,44.47233720400929,0 11.36674249797283,44.4700426031932,0 11.36743473982513,44.47169129983411,0 11.3708315661059,44.47151623340458,0 11.37620006978936,44.47605638265421,0 11.38719733978811,44.47160278304664,0 11.39791921436467,44.48799240279431,0 11.39389268093091,44.48949256855273,0 11.39362540123598,44.49452114178592,0 11.39392600591553,44.49555051901701,0 11.39388568388305,44.49686352501799,0 11.39926002768516,44.50522498314744,0 11.40042168861967,44.50947517052147,0 11.40539575547926,44.51341082040072,0 11.41094924508303,44.51160847544712,0 11.41496339307681,44.51510016267201,0 11.40545531187702,44.51779770282398,0 11.40456015917078,44.51674363783908,0 11.40074584247191,44.5173872465171,0 11.39891859136584,44.51821750555545,0 11.39621870503844,44.51828645030153,0 11.39436113856068,44.51743129358157,0 11.39275161389104,44.51795757125814,0 11.39186445004297,44.51859121933909,0 11.38972642115642,44.51931396294894,0 11.38644196620808,44.51996757905231,0 11.37601532316834,44.51890948269433,0 11.36475449759857,44.52721896756687,0 11.36098511686774,44.52971261992856,0 11.36257802481627,44.54462413937892,0 11.36473662576511,44.54918686134037,0 11.35729862767849,44.55219124781868,0 11.35395716216774,44.55287461662717,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>CORRENTE_SLUCA_20181004</name>
+			<styleUrl>#msn_ylw-pushpin4</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							11.29571165662475,44.48056739692655,0 11.29357286664924,44.47881303372873,0 11.29353019362652,44.47664123918769,0 11.29589655812142,44.47668242507816,0 11.29816335679129,44.47905260855297,0 11.2987098990016,44.48011511804015,0 11.29571165662475,44.48056739692655,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

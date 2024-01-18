@@ -1,0 +1,151 @@
+#lista_zone{
+    padding: 5px 15px;
+    li{
+        font-weight: bold;
+    }
+    ul{
+        padding: 5px 0px 5px 25px;
+        li{
+            font-weight: normal;
+        }
+    }
+}
+#lista_ztl{
+    background-color: #1B9FB6;
+    color:white;
+}
+
+#pagina_rimini{
+    #contenuto-sottopagina{
+        padding: 150px 0 0;
+       .contenuto{
+            display: none;
+        }
+    }
+    .carousel-indicators{
+        bottom: 50px;
+    }
+    #carouselCorrente{
+        background-color:#ff0276;
+        padding-top:0;
+        .carousel-item{
+            img{max-height: 60vh;}
+            background-color:#ff0276;
+            @media screen and (max-width:600px){
+                height: auto;
+                img{
+                    max-height: 40vh;
+                }
+            }
+        }
+
+    }
+    #intro_rimini{
+        background-color: #82dade;
+        padding: 30px;
+        text-align: center;
+        font-size: 1.55em;
+        line-height: 2em;
+    }
+    #tariffe{
+        padding: 25px 0;
+        line-height: 1.75em;
+        font-size: 1.33em; 
+        ul{
+            padding: 0 10px;
+            
+            li{
+                list-style: circle;
+            }
+        }
+    }
+    #attenzione,
+    #sesei{
+        .col-md-6{
+            padding: 30px;
+        }
+        .col-md-1{
+            font-size: 60px;
+            text-align: center;
+            color: #1B9FB6;
+        }
+        margin-bottom: 35px;
+        line-height: 1.75em;
+        font-size: 1.33em; 
+    }
+}
+
+.flexrow{
+    display: flex;
+    .textcol{
+        align-items: center;
+        display: flex;
+    }
+}
+
+.bg_azzurro{
+    background-color: #1B9FB6;
+    color: white;
+}
+.centered{
+    .row{
+        display: flex;
+        align-items: center;
+    }
+}
+.huge_text{
+    font-size: 1.66em;
+}
+
+#precodice_corrente,
+#codice_corrente{
+    padding: 20px 0;
+    background-color: #1B9FB6;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.55em;
+    line-height: 2em;
+    .row{
+        display: flex;
+        align-items: center;
+    }
+    img{
+        max-height: 125px;
+        margin: 0 auto;
+    }
+    .codice{
+        color: white;
+        font-size: 50px;
+        line-height: 1.1em;
+        font-weight: bold;
+        div{
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 1.4em;
+            margin-bottom: 15px;
+            &:last-child{
+                margin-top: 15px;
+            }
+            a{
+                color: white;
+                text-decoration: underline;
+            }
+            span{
+                color: #82dade;
+                font-weight: bold;
+            }
+        }
+    }
+}
+#precodice_corrente{
+    background-color: #82dade;
+    padding: 15px 0 15px;
+}
+.testo_1quarto{
+    p{
+    
+    text-align: center;
+    line-height: 1.6em;
+    font-size: 20px!important;
+    }    
+}
